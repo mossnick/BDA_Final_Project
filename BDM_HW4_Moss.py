@@ -1,5 +1,5 @@
 from pyspark import SparkContext
-import datetime
+from datetime import datetime
 from datetime import timedelta
 import csv
 import functools
