@@ -80,7 +80,7 @@ def main(sc):
         std = custom_std(sorted_values)
         low = max(0,median-std)
         hi = median + std
-        return (kv[0],(low,median,hi))    
+        return (kv[0],(median,low,hi))    
 
     rddH = rddG.groupByKey() \
             .map(functools.partial(computeStats, groupCount))
